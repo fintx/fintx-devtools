@@ -8,6 +8,6 @@ import java.lang.annotation.Retention;
 
 
 @Retention(RUNTIME)
-public @interface Comment {
-    public String value();
+public @interface Methods {
+    public String[] value();
 }

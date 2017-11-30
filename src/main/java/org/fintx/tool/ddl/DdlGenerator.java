@@ -162,6 +162,33 @@ public class DdlGenerator {
         sb.append(") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;\n\n");
         return sb.toString();
     }
+    
+    /**
+     * 根据表名称 和 实体属性 创建一张表, Collection类型属性创建关联关系表，其他复合类型创建关联ID
+     * 
+     * @param clazz 实体类
+     */
+    public String createDao(final Class<?> clazz, final List<String> referTables, final String relatedIdColumn,final boolean sharding) {
+        return null;
+    }
+    
+    /**
+     * 根据表名称 和 实体属性 创建一张表, Collection类型属性创建关联关系表，其他复合类型创建关联ID
+     * 
+     * @param clazz 实体类
+     */
+    public String createService(final Class<?> clazz, final List<String> referTables, final String relatedIdColumn,final boolean sharding) {
+        return null;
+    }
+    
+    /**
+     * 根据表名称 和 实体属性 创建一张表, Collection类型属性创建关联关系表，其他复合类型创建关联ID
+     * 
+     * @param clazz 实体类
+     */
+    public String createMapper(final Class<?> clazz, final List<String> referTables, final String relatedIdColumn,final boolean sharding) {
+        return null;
+    }
 
     private static String getSqlField(String property) {
         StringBuffer sb = new StringBuffer("");
