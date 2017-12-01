@@ -8,6 +8,7 @@ import java.lang.annotation.Retention;
 
 
 @Retention(RUNTIME)
-public @interface Methods {
-    public Method[] value();
+public @interface Param {
+    public String name();
+    public Class<?> type();
 }

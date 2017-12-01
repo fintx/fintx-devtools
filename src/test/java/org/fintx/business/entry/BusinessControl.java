@@ -2,6 +2,10 @@ package org.fintx.business.entry;
 
 
 
+import org.fintx.tool.ddl.Method;
+import org.fintx.tool.ddl.Param;
+import org.fintx.tool.ddl.SqlMapperMethod;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,6 +14,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@SqlMapperMethod(name = "", params = { @Param(name = "", type = null) }, returnType = null, sql = "")
 // TODO 失败的从表中移除
 public class BusinessControl {
 
