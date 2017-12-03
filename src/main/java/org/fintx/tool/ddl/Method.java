@@ -14,4 +14,5 @@ public @interface Method {
     public String name();
     public Class<?> returnType();
     public Param[] params();
+    public String comment() default "";
 }

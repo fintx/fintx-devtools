@@ -7,5 +7,6 @@ public @interface Sharding {
     
    public  String[] columns();
    public  String type();
+   public  String version();
 
 }

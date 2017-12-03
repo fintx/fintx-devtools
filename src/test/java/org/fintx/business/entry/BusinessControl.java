@@ -14,7 +14,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@SqlMapperMethod(name = "", params = { @Param(name = "", type = null) }, returnType = null, sql = "")
+// @SqlMapperMethod(name = "", params = { @Param(name = "", type = null) }, returnType = null, sql = "")
 // TODO 失败的从表中移除
 public class BusinessControl {
 
