@@ -19,6 +19,6 @@ package org.fintx.tool.generator;
  * @author bluecreator(qiang.x.wang@gmail.com)
  *
  */
-public class Dao {
+public class Repository {
 
 }
