@@ -15,10 +15,14 @@
  */
 package org.fintx.tool.generator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author bluecreator(qiang.x.wang@gmail.com)
  *
  */
 public class JavaSource {
+    public List imports=new ArrayList();
 
 }
