@@ -1,6 +1,7 @@
 package org.fintx.tool.mybatis;
 
-import org.fintx.message.Message;
+
+import org.fintx.lang.Codeable;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
@@ -11,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-public class EnumTypeHandler<E extends Enum<E>&Message<?>> extends BaseTypeHandler<E> {
+public class EnumTypeHandler<E extends Enum<E>&Codeable<?>> extends BaseTypeHandler<E> {
     private Class<E> type;  
     public EnumTypeHandler(Class<E> type) {  
         if (type == null)  
