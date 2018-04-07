@@ -9,8 +9,8 @@ import java.lang.annotation.Retention;
 
 
 @Retention(RUNTIME)
-@Repeatable(DaoMethods.class)
-public @interface DaoMethod {
+@Repeatable(RepositoryMethods.class)
+public @interface ReposotoryMethod {
     public String name();
     public Class<?> returnType();
     public Param[] params() default {};

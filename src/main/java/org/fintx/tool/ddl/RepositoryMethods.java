@@ -9,6 +9,6 @@ import java.lang.annotation.Retention;
 
 
 @Retention(RUNTIME)
-public @interface DaoMethods {
-    public DaoMethod[] value();
+public @interface RepositoryMethods {
+    public ReposotoryMethod[] value();
   }
