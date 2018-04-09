@@ -16,12 +16,20 @@
 package com.fintx.generator.schema;
 
 import com.fintx.generator.file.TargetFile;
+import org.mybatis.generator.config.ColumnOverride;
+import org.mybatis.generator.config.GeneratedKey;
+import org.mybatis.generator.config.IgnoredColumn;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author bluecreator(qiang.x.wang@gmail.com)
  *
  */
 public class SqlFile extends TargetFile{
+    
+   private List<Table> tables;
 
     /* (non-Javadoc)
      * @see com.fintx.generator.file.TargetFile#getFormattedContent()

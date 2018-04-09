@@ -54,7 +54,7 @@ public class Column {
 
     protected boolean isColumnNameDelimited;
 
-    protected TableSqlFile table;
+    protected Table table;
 
     protected Properties properties;
 
