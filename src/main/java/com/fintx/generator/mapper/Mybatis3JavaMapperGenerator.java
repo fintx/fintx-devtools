@@ -16,7 +16,7 @@
 package com.fintx.generator.mapper;
 
 import com.fintx.generator.Context;
-import com.squareup.javapoet.JavaFile;
+import com.fintx.generator.java.JavaSourceFile;
 
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class Mybatis3JavaMapperGenerator implements JavaSqlMapperGenerator {
      * @see com.fintx.generator.java.JavaGenerator#getTargetFile()
      */
     @Override
-    public List<JavaFile> getTargetFile() {
+    public List<JavaSourceFile> getTargetFile() {
         // TODO Auto-generated method stub
         return null;
     }

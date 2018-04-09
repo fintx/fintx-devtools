@@ -43,7 +43,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import com.fintx.generator.file.TargetFile;
 
 /** A Java file containing a single top level class. */
-public final class JavaFile extends TargetFile{
+public final class JavaFile{
   private static final Appendable NULL_APPENDABLE = new Appendable() {
     @Override public Appendable append(CharSequence charSequence) {
       return this;
@@ -273,41 +273,4 @@ public final class JavaFile extends TargetFile{
       return new JavaFile(this);
     }
   }
-
-/* (non-Javadoc)
- * @see com.fintx.generator.file.TargetFile#getFormattedContent()
- */
-@Override
-public String getFormattedContent() {
-    // TODO Auto-generated method stub
-    return null;
-}
-
-/* (non-Javadoc)
- * @see com.fintx.generator.file.TargetFile#getFileName()
- */
-@Override
-public String getFileName() {
-    // TODO Auto-generated method stub
-    return null;
-}
-
-
-/* (non-Javadoc)
- * @see com.fintx.generator.file.TargetFile#isMergeable()
- */
-@Override
-public boolean isMergeable() {
-    // TODO Auto-generated method stub
-    return false;
-}
-
-/* (non-Javadoc)
- * @see com.fintx.generator.file.TargetFile#getPackage()
- */
-@Override
-public String getPackage() {
-    // TODO Auto-generated method stub
-    return null;
-}
 }

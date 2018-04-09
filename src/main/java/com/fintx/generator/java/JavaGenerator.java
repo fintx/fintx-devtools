@@ -16,14 +16,12 @@
 package com.fintx.generator.java;
 
 
-import com.fintx.generator.Generator;
 import com.fintx.generator.file.FileGenerator;
-import com.squareup.javapoet.JavaFile;
 
 import java.util.List;
 
 
 public interface  JavaGenerator extends FileGenerator {
-    public  List<JavaFile> getTargetFile();
+    public  List<JavaSourceFile> getTargetFile();
 
 }
