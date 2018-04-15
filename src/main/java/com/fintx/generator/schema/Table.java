@@ -15,11 +15,14 @@
  */
 package com.fintx.generator.schema;
 
+import com.fintx.generator.IntrospectedModel;
 import com.fintx.generator.file.TargetFile;
 import org.mybatis.generator.config.ColumnOverride;
 import org.mybatis.generator.config.GeneratedKey;
 import org.mybatis.generator.config.IgnoredColumn;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -27,58 +30,20 @@ import java.util.Map;
  * @author bluecreator(qiang.x.wang@gmail.com)
  *
  */
-public class Table extends TargetFile{
-    
-    private List<ColumnOverride> columnOverrides;
+public class Table {
 
-    private Map<IgnoredColumn, Boolean> ignoredColumns;
+    private HashMap<Column,Boolean> columns;
 
     private GeneratedKey generatedKey;
 
-    private String selectByPrimaryKeyQueryId;
-
-    private String schema;
-
     private String tableName;
 
-    private String domainObjectName;
+    private IntrospectedModel<?, ?, ?, Table> introspectedModel;
 
     private String alias;
+    
+    private String comments;
 
-    /* (non-Javadoc)
-     * @see com.fintx.generator.file.TargetFile#getFormattedContent()
-     */
-    @Override
-    public String getFormattedContent() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    /* (non-Javadoc)
-     * @see com.fintx.generator.file.TargetFile#getFileName()
-     */
-    @Override
-    public String getFileName() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    /* (non-Javadoc)
-     * @see com.fintx.generator.file.TargetFile#getPackage()
-     */
-    @Override
-    public String getPackage() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    /* (non-Javadoc)
-     * @see com.fintx.generator.file.TargetFile#isMergeable()
-     */
-    @Override
-    public boolean isMergeable() {
-        // TODO Auto-generated method stub
-        return false;
-    }
+   
 
 }
