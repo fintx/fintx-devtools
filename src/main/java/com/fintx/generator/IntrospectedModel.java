@@ -32,7 +32,7 @@ public abstract class IntrospectedModel<F, R, M, S> {
 
     protected String  basePackage;
     
-    private F Entity;
+    private F entity;
     
     private R repository;
     
