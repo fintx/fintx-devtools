@@ -10,5 +10,5 @@ import java.lang.annotation.Retention;
 
 @Retention(RUNTIME)
 public @interface RepositoryMethods {
-    public ReposotoryMethod[] value();
+    public RepositoryMethod[] value();
   }

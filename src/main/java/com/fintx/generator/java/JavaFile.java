@@ -16,7 +16,6 @@
 package com.fintx.generator.java;
 
 import com.fintx.generator.file.TargetFile;
-import com.squareup.javapoet.JavaFile;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -26,8 +25,8 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class JavaSourceFile<T> extends TargetFile{
-    JavaFile javaFile;
+public class JavaFile<T> extends TargetFile{
+    com.squareup.javapoet.JavaFile javaFile;
 
     /* (non-Javadoc)
      * @see com.fintx.generator.file.TargetFile#getFormattedContent()

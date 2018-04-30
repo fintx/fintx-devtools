@@ -16,7 +16,7 @@
 package com.fintx.generator.repository;
 
 import com.fintx.generator.Context;
-import com.fintx.generator.java.JavaSourceFile;
+import com.fintx.generator.java.JavaFile;
 
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class SpringMybatisRepositoryGenerator implements JavaRepositoryGenerator
      * @see com.fintx.generator.java.JavaGenerator#getTargetFile()
      */
     @Override
-    public List<JavaSourceFile> getTargetFile() {
+    public List<JavaFile> getTargetFile() {
         // TODO Auto-generated method stub
         return null;
     }

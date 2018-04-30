@@ -22,6 +22,6 @@ import java.util.List;
 
 
 public interface  JavaGenerator extends FileGenerator {
-    public  List<JavaSourceFile> getTargetFile();
+    public  List<JavaFile> getTargetFile();
 
 }

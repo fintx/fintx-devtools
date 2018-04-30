@@ -10,7 +10,7 @@ import java.lang.annotation.Retention;
 
 @Retention(RUNTIME)
 @Repeatable(RepositoryMethods.class)
-public @interface ReposotoryMethod {
+public @interface RepositoryMethod {
     public String name();
     public Class<?> returnType();
     public Param[] params() default {};
