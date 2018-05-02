@@ -15,10 +15,44 @@
  */
 package com.fintx.generator;
 
+import org.mybatis.generator.config.Context;
+
 /**
  * @author bluecreator(qiang.x.wang@gmail.com)
  *
  */
-public class Item {
+public class Field {
+    
+    private String name;
+    
+    private String type;
+    
+    private String comment;
+    
+    private String alias;
+    
+    private String schemaName;
+    
+    private String schemaType;
+    
+    protected String typeHandler;
+    
+    private int length;
+    
+    private String indexGroup;
+    
+    private String uniqueGroup;  
+    
+    protected int scale;
+
+    protected boolean identity;
+    
+    protected boolean ignored;
+      
+    protected boolean generatedKey;
+    
+    protected Context context;
+
+    protected IntrospectedEntity introspectedEntity;
 
 }

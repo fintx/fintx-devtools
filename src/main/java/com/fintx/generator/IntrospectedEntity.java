@@ -35,7 +35,7 @@ public abstract class IntrospectedEntity {
     
     protected String schemaName;
     
-    protected List<Attribute> attributes;
+    protected List<Field> attributes;
     
     protected List<Method> mapperMethods;
     
